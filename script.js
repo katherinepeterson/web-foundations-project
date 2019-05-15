@@ -23,4 +23,9 @@ const data = {
     }
   };
 
-  
+  function renderPrizes() {
+    console.log(document.getElementsByClassName('prize-name'))
+  }
+
+  renderPrizes();
+

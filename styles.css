@@ -27,6 +27,7 @@ html {
 }
 .prize-name {
     background-color: dodgerblue;
+    text-align: center;
     height: 100px;
     width: 150px;
     color: white;
@@ -44,7 +45,8 @@ html {
 .customer-name {
     border: solid 1px dodgerblue;
     height: 100px;
-    color: white;
+    width: 150px;
+    text-align: center;
 }
 
 .customer {
