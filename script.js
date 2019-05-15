@@ -23,9 +23,38 @@ const data = {
     }
   };
 
+  const prizeNames = Array.from(document.getElementsByClassName('prize-name'));
+  const actualPrizeNames = Object.keys(data.prizes);
+  
   function renderPrizes() {
-    console.log(document.getElementsByClassName('prize-name'))
+    let i = 0;
+    prizeNames.map(function(el){
+        const names = actualPrizeNames;
+        el.innerHTML = names[i];
+        i++;
+    })
+  }
+  const customerNames = Array.from(document.getElementsByClassName('customer-name'));
+  
+  function renderCustomers() {
+    let i = 0;
+    customerNames.map(function(el){
+        const names = Object.keys(data.customers);
+        el.innerHTML = names[i];
+        i++;
+    })
   }
 
   renderPrizes();
+  renderCustomers();
+
+  const customerPrizes = Array.from(document.getElementsByClassName('customer-count'));
+  
+  function renderCustomerPrizes() {
+    custHtml = `<ul> ${actualPrizeNames.map(function(el){return `<li>${el}</li>`}).join('')} </ul>`;
+    console.log(custHtml);
+    customerPrizes.forEach(function(el){el.innerHTML = custHtml});
+  }
+
+  renderCustomerPrizes();
 

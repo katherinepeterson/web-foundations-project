@@ -31,6 +31,7 @@ html {
     height: 100px;
     width: 150px;
     color: white;
+    line-height: 80px;
 }
 .prize-count {
     height: 80px;
@@ -44,9 +45,10 @@ html {
 }
 .customer-name {
     border: solid 1px dodgerblue;
-    height: 100px;
+    height: 75px;
     width: 150px;
     text-align: center;
+    line-height: 80px;
 }
 
 .customer {
@@ -59,6 +61,7 @@ html {
 
 .customer-count {
     background-color: white;
+    text-align: center;
 }
 
 h2 {
