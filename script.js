@@ -51,11 +51,8 @@ const data = {
 
   const customerPrizes = Array.from(document.getElementsByClassName('customer-count'));
   const actualCustomerNames = customerNames.map(function(el){return el.innerHTML});
-  console.log(actualCustomerNames)
   function renderCustomerPrizes() {
-    let i = 0;
-    console.log(actualCustomerNames[i])
-    custHtml = `<ul> ${actualPrizeNames.map(function(el){return `<li><button>-</button>${el} ${data.customers[actualCustomerNames[i]][el]}<button>+</button></li>`}).join('')} </ul>`;
+    custHtml = `<ul> ${actualPrizeNames.map(function(el, i){return `<li><button>-</button>${el} ${data.customers[actualCustomerNames[i]][el]}<button>+</button></li>`}).join('')} </ul>`;
     customerPrizes.forEach(function(el){
         el.innerHTML = custHtml
     });
@@ -63,3 +60,11 @@ const data = {
 
   renderCustomerPrizes();
 
+const prizeCounts = Array.from(document.getElementsByClassName('prize-count'));
+function renderPrizeInventory() {
+    prizeCounts.forEach(function(el, i){
+        el.innerHTML = data.prizes[actualPrizeNames[i]];
+    });
+}
+
+renderPrizeInventory();
