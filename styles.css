@@ -1,0 +1,65 @@
+html {
+    color: dodgerblue;
+}
+
+#prize-inventory {
+    display: flex;
+    justify-content: center;
+}
+
+#customers {
+    display: flex;
+    justify-content: center;
+}
+
+.prizes {
+    border: solid 1px;
+    height: 200px;
+    width: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.prize-name {
+    background-color: dodgerblue;
+    height: 100px;
+    width: 150px;
+    color: white;
+}
+.prize-count {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    line-height: 80px;
+}
+.customer-name {
+    border: solid 1px dodgerblue;
+    height: 100px;
+    color: white;
+}
+
+.customer {
+    border: solid 1px;
+    height: 200px;
+    width: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.customer-count {
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
