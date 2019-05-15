@@ -51,7 +51,7 @@ const data = {
   const customerPrizes = Array.from(document.getElementsByClassName('customer-count'));
   
   function renderCustomerPrizes() {
-    custHtml = `<ul> ${actualPrizeNames.map(function(el){return `<li>${el}</li>`}).join('')} </ul>`;
+    custHtml = `<ul> ${actualPrizeNames.map(function(el){return `<li><button>-</button>${el}<button>+</button></li>`}).join('')} </ul>`;
     console.log(custHtml);
     customerPrizes.forEach(function(el){el.innerHTML = custHtml});
   }

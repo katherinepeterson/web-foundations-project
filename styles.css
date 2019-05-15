@@ -68,3 +68,19 @@ h2 {
     text-align: center;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+}
